@@ -17,15 +17,18 @@
  
  # Update AOSP
  cd ~/Documents/platform-support/ && source activate py2 && repo sync -j8 && source deactivate
- cd ~/Documents/platform-base/base/ && git stash && git pull origin
+ cd ~/Documents/platform-base/base/ && curl https://raw.githubusercontent.com/kevalpatel2106/kp-scripts/master/git/update-repo.sh?token=ATIYAvDkfiSfp-hIHc7SKx4RaayZJoI_ks5cGgw5wA%3D%3D | bash
  
  # Update all Cookpad repos
- cd ~/Documents/global-android/ && git fetch && git pull origin
- cd ~/Documents/global-web && git fetch && git pull origin
- cd ~/Documents/global-ios && git fetch && git pull origin
+ cd ~/Documents/global-android/ && curl https://raw.githubusercontent.com/kevalpatel2106/kp-scripts/master/git/update-repo.sh?token=ATIYAvDkfiSfp-hIHc7SKx4RaayZJoI_ks5cGgw5wA%3D%3D | bash
+ cd ~/Documents/global-web && curl https://raw.githubusercontent.com/kevalpatel2106/kp-scripts/master/git/update-repo.sh?token=ATIYAvDkfiSfp-hIHc7SKx4RaayZJoI_ks5cGgw5wA%3D%3D | bash
+ cd ~/Documents/global-ios && curl https://raw.githubusercontent.com/kevalpatel2106/kp-scripts/master/git/update-repo.sh?token=ATIYAvDkfiSfp-hIHc7SKx4RaayZJoI_ks5cGgw5wA%3D%3D | bash
 
 # Update Battly Repos
-cd $GOPATH/src/battly-server/api && go get
+cd $GOPATH/src/battly-server/api && curl https://raw.githubusercontent.com/kevalpatel2106/kp-scripts/master/git/update-repo.sh?token=ATIYAvDkfiSfp-hIHc7SKx4RaayZJoI_ks5cGgw5wA%3D%3D | bash
+cd ~/Documents/battly-android && curl https://raw.githubusercontent.com/kevalpatel2106/kp-scripts/master/git/update-repo.sh?token=ATIYAvDkfiSfp-hIHc7SKx4RaayZJoI_ks5cGgw5wA%3D%3D | bash
+cd ~/Documents/battly-desktop && curl https://raw.githubusercontent.com/kevalpatel2106/kp-scripts/master/git/update-repo.sh?token=ATIYAvDkfiSfp-hIHc7SKx4RaayZJoI_ks5cGgw5wA%3D%3D | bash
+cd ~/Documents/battly-browser-ext && curl https://raw.githubusercontent.com/kevalpatel2106/kp-scripts/master/git/update-repo.sh?token=ATIYAvDkfiSfp-hIHc7SKx4RaayZJoI_ks5cGgw5wA%3D%3D | bash
 
 # Go back to Documents folder
 cd ~/Documents
