@@ -109,7 +109,7 @@ export PATH=$PATH:$HOME/Documents/Go/google-cloud-sdk/bin
 
 ############ Aliases
 
-alias update-all="curl -L https://gist.githubusercontent.com/kevalpatel2106/f59433705e4913372e223d0440548604/raw/de58b566989bad98099439a716da38d242444a32/update-all.sh | bash"
+alias update-all="curl -L https://raw.githubusercontent.com/kevalpatel2106/kp-scripts/master/update-all.sh?token=AEZBQAXFHWNX7T6WIZ23TTK43QBS4 | bash"
 
 # Git alias
 alias gl="git log --oneline --graph"
