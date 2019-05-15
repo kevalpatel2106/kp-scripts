@@ -118,13 +118,6 @@ alias gp="git push origin"
 alias ga="git add ." 
 Alias gb="git branch"
 
-# Cookpad specific commands
-alias testCkpd="./gradlew clean :cookpad:jacocoTestReport" 
-alias installCkpd="./gradlew clean --daemon && ./gradlew assembleGlobalRelease --daemon && adb -d install -r cookpad/build/outputs/apk/global/release/cookpad-global-release.apk && adb shell am start -n com.mufumbo.android.recipe.search/com.cookpad.android.app.gateway.GatewayActivity"
-alias installDebug="./gradlew clean --daemon && ./gradlew assembleGlobalDebug --daemon && adb -d install -r cookpad/build/outputs/apk/global/debug/cookpad-global-debug.apk && adb shell am start -n com.mufumbo.android.recipe.search/com.cookpad.android.app.gateway.GatewayActivity"
-alias copyCkpd="adb -d install -r cookpad/build/outputs/apk/global/release/cookpad-global-release.apk && adb shell am start -n com.mufumbo.android.recipe.search/com.cookpad.android.app.gateway.GatewayActivity"
-
-
 ############ Plugins
 
 # Which plugins would you like to load?
