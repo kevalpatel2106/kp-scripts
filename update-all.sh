@@ -17,6 +17,3 @@
  
 # Go back to Documents folder
 cd ~/Documents
-
-# Change wallpaper. (Sweet!!)
-curl -L "https://raw.githubusercontent.com/kevalpatel2106/kp-scripts/master/bing-wallpaper.sh?token=AEZBQAWNKQEDFERLTLHQOT243QBMK" | bash
