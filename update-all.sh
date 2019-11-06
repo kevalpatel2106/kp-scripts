@@ -13,7 +13,13 @@
  echo "y" | gcloud components update
 
  # Update Android SDK
- source activate jdk8 && sdkmanager --update && source deactivate
+ conda activate jdk8 && sdkmanager --update && source deactivate
  
 # Go back to Documents folder
 cd ~/Documents
+
+# Update all git repo
+for d in *
+do
+    ( cd "$d" && git pull )
+done
