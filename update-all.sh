@@ -23,6 +23,3 @@ for d in *
 do
     ( cd "$d" && git pull )
 done
-
-# gcloud update
-gcloud components update
